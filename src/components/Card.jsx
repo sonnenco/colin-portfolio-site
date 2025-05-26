@@ -7,7 +7,7 @@ const Card = ({ image, title, description, link }) => {
       <div className="card-content p-4">
         <div className="card-title font-bold">{title}</div>
         <div className="card-description mt-2 text-sm/5">{description}</div>
-        <a href={link} className="card-link inline-block absolute bottom-4 border-2 rounded-lg border-blue-500 bg-blue-500 text-xs font-semibold text-white px-3 py-2" target="_blank" rel="noopener noreferrer">
+        <a href={link} className="card-link inline-block absolute bottom-4 border-2 rounded-lg border-blue-500 bg-blue-500 text-xs font-semibold text-white px-3 py-2 ease-in-out duration-300 hover:bg-white hover:text-blue-500" target="_blank" rel="noopener noreferrer">
           Learn more
         </a>
       </div>

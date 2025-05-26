@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 import Photo from '../assets/colin_photo.png'
 import { CiLinkedin } from 'react-icons/ci'
 import { IoLogoGithub } from "react-icons/io5"
 import { PiArrowDownThin } from "react-icons/pi"
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <div className="flex flex-col mt-4">
         <img src={Photo} className="self-center max-w-65 md:max-w-75"></img>
@@ -17,12 +17,11 @@ const Hero = () => {
                 critical cybersecurity systems and ensuring business continuity.
             </div>
         </div>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-row justify-between mt-5 md:justify-start">
-                <button className="border-2 rounded-lg border-blue-500 bg-blue-500 font-semibold text-white px-10 py-2 md:mr-10">Contact</button>
-                <button className="border-2 rounded-lg border-blue-500 bg-white font-semibold text-blue-500 px-10 py-2">Resume</button>
-          </div>
-          <div className="flex flex-row justify-between mt-6">
+        <div className="flex flex-col mt-4 md:flex-row md:items-center justify-between">
+          <button className="border-2 rounded-lg border-blue-500 bg-blue-500 font-semibold text-white px-10 py-2 max-w-35 ease-in-out duration-300 hover:bg-white hover:text-blue-500">
+            Resume
+          </button>
+          <div className="flex flex-row justify-between mt-7">
             <PiArrowDownThin className="scale-175 md:hidden"/>
             <div className="flex flex-row">
               <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank">

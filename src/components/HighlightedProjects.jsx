@@ -36,8 +36,8 @@ const HighlightedProjects = () => {
   }];
 
   return (
-    <div ref={scrollRef} className="">
-      <Carousel className="">
+    <div ref={scrollRef}>
+      <Carousel>
         {projects.map((project, index) => (
             <Card key={index} {...project} />
           ))}

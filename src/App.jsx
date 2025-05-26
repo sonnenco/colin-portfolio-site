@@ -77,8 +77,8 @@ function App() {
         {/* Footer */}
         <div className="border-t border-gray-300 mt-6">
           <div className="flex flex-row justify-between mt-3 text-sm font-semibold">
-            <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank"  className="ml-20">LinkedIn</a>
-            <a href="https://github.com/sonnenco" target="_blank"  className="mr-20">GitHub</a>
+            <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank"  className="ml-20 ease-in-out duration-350 hover:text-gray-500">LinkedIn</a>
+            <a href="https://github.com/sonnenco" target="_blank"  className="mr-20 ease-in-out duration-350 hover:text-gray-500">GitHub</a>
           </div>
           <div className="flex flex-col mt-4 items-center">
             <div className="text-sm font-semibold">🌎 Philadelphia, PA, USA</div>
