@@ -35,8 +35,6 @@ export default function Carousel({ children }) {
     setCurrentIndex(clampedIndex);
   };
 
-  // No onScroll event needed because user cannot swipe/scroll
-
   const scrollLeft = () => {
     scrollToIndex(currentIndex - 1);
   };
@@ -65,16 +63,19 @@ export default function Carousel({ children }) {
         <button
           onClick={scrollLeft}
           disabled={currentIndex <= 0}
-          className="bg-white bg-opacity-75 ease-in-out duration-300 hover:text-gray-600"
-          aria-label="Scroll Left"
+          className="ease-in-out duration-300 hover:text-gray-600"
+          aria-label="Scroll left"
         >
           &#8592;
         </button>
+        <div className="scale-75">
+          {currentIndex + 1} / {maxIndex + 1}
+        </div>
         <button
           onClick={scrollRight}
           disabled={currentIndex >= maxIndex}
-          className="bg-white bg-opacity-75 ease-in-out duration-300 hover:text-gray-600"
-          aria-label="Scroll Right"
+          className="ease-in-out duration-300 hover:text-gray-600"
+          aria-label="Scroll right"
         >
           &#8594;
         </button>

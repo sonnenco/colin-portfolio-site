@@ -36,13 +36,16 @@ const HighlightedProjects = () => {
   }];
 
   return (
-    <div ref={scrollRef}>
-      <Carousel>
-        {projects.map((project, index) => (
-            <Card key={index} {...project} />
-          ))}
-      </Carousel>  
-    </div>
+    <>
+      <div className="font-bold text-xl mt-10">Project highlights</div>
+      <div ref={scrollRef}>
+        <Carousel>
+          {projects.map((project, index) => (
+              <Card key={index} {...project} />
+            ))}
+        </Carousel>  
+      </div>
+    </>
   )
 }
 
