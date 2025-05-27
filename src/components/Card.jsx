@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ image, title, description, link }) => {
   return (
-    <div className="card relative w-[80vw] max-w-90 h-95 my-10 mx-5 overflow-hidden border-4 rounded-xl shadow-[4px_4px_8px_rgba(0,0,0,0.1)]
+    <div className="card relative w-[80vw] max-w-100 h-95 my-10 mx-5 overflow-hidden border-4 rounded-xl shadow-[4px_4px_8px_rgba(0,0,0,0.1)]
     light:border-gray-300
     dark:border-zinc-200">
       <img src={image} alt={title} className="card-image w-full max-h-40 object-cover" />

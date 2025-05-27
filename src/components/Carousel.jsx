@@ -28,10 +28,13 @@ export default function Carousel({ children }) {
   const scrollToIndex = (index) => {
     if (!scrollRef.current) return;
     const clampedIndex = Math.min(Math.max(index, 0), maxIndex);
+    const scrollIndex = clampedIndex + 1; // +1 to account for left ghost card
+
     scrollRef.current.scrollTo({
-      left: clampedIndex * cardWidth,
+      left: scrollIndex * cardWidth,
       behavior: "smooth",
     });
+
     setCurrentIndex(clampedIndex);
   };
 
@@ -44,18 +47,32 @@ export default function Carousel({ children }) {
   };
 
   return (
-    <div>
+    <div className="relative">
       <div
         ref={scrollRef}
         className="overflow-x-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth"
         style={{ scrollSnapType: "x mandatory" }}
       >
         <div className="flex space-x-4">
+          {/* Left ghost card */}
+          <div
+            style={{ width: `${cardWidth}px` }}
+            className="flex-shrink-0"
+            aria-hidden="true"
+          />
+          
           {React.Children.map(children, (child, index) => (
             <div key={index} className="carousel-card snap-center flex-shrink-0">
               {child}
             </div>
           ))}
+
+          {/* Right ghost card */}
+          <div
+            style={{ width: `${cardWidth}px` }}
+            className="flex-shrink-0"
+            aria-hidden="true"
+          />
         </div>
       </div>
 
@@ -68,7 +85,7 @@ export default function Carousel({ children }) {
         >
           &#8592;
         </button>
-        <div className="scale-75">
+        <div className="scale-70">
           {currentIndex + 1} / {maxIndex + 1}
         </div>
         <button
@@ -80,6 +97,11 @@ export default function Carousel({ children }) {
           &#8594;
         </button>
       </div>
+      {/* Left fade */}
+      <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-white to-transparent" />
+
+      {/* Right fade */}
+      <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-white to-transparent" />
     </div>
   );
 }
