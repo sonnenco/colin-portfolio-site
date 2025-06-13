@@ -22,7 +22,7 @@ const HighlightedProjects = () => {
   const projects = [{
     image:Travel,
     title:"Wanderlust Travel Agency",
-    description:"Wanderlust Travel Agency ('WTA') is a portfolio project for CS340 at Oregon State University created by Rebecca Rosenberg and Colin Sonnenberg. WTA is a fictional business where agency employees need a website to help make and manage bookings.",
+    description:"Wanderlust Travel Agency ('WTA') is a portfolio project for CS 340 at Oregon State University created by Rebecca Rosenberg and Colin Sonnenberg. WTA is a fictional business where agency employees need a website to help make and manage bookings.",
     link:"https://github.com/sonnenco/wanderlust_travel_agency"
   }, {
     image:Exercise,

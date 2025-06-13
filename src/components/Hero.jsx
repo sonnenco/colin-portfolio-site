@@ -23,12 +23,15 @@ const Hero = ({ theme } ) => {
           </div>
         </div>
         <div className="flex flex-col mt-4 md:flex-row md:items-center justify-between">
-          <button className="border-2 rounded-lg font-semibold px-10 py-2 max-w-35 
+          <a
+            href="https://drive.google.com/file/d/1Cz-7yFYJmm8KOGaR-0ZM7-NL_l7usxQz/view?usp=share_link"
+            target="_blank"
+            className="border-2 rounded-lg font-semibold px-10 py-2 max-w-35 
             ease-in-out duration-300
             light:text-white light:border-blue-500 light:bg-blue-500 light:hover:bg-white light:hover:text-blue-500
             dark:text-slate-800 dark:border-emerald-300 dark:bg-emerald-300 dark:hover:bg-slate-800 dark:hover:text-emerald-300">
             Resume
-          </button>
+          </a>
           <div className="flex flex-row justify-between mt-7 md:mt-0">
             <PiArrowDownThin className="scale-175 md:hidden"/>
             <div className="flex flex-row">
