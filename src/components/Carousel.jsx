@@ -100,10 +100,10 @@ export default function Carousel({ children }) {
           </button>
         </div>
         {/* Left fade */}
-        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r light:from-white dark:from-slate-800 to-transparent" />
+        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r light:from-slate-50 dark:from-slate-800 to-transparent" />
 
         {/* Right fade */}
-        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l light:from-white dark:from-slate-800 to-transparent" />
+        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l light:from-slate-50 dark:from-slate-800 to-transparent" />
       </div>
       
       {/* lg screen sizes and above */}

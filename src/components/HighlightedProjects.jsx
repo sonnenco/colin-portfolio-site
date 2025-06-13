@@ -22,17 +22,17 @@ const HighlightedProjects = () => {
   const projects = [{
     image:Travel,
     title:"Wanderlust Travel Agency",
-    description:"Wanderlust Travel Agency ('WTA') is a portfolio project for CS 340 at Oregon State University created by Rebecca Rosenberg and Colin Sonnenberg. WTA is a fictional business where agency employees need a website to help make and manage bookings.",
+    description:"WTA is a fictional business where agency employees need a database-driven website to manage vacation bookings. Written as a portfolio project for CS 340 at Oregon State University by Rebecca Rosenberg and Colin Sonnenberg.",
     link:"https://github.com/sonnenco/wanderlust_travel_agency"
   }, {
     image:Exercise,
     title:"Exercise Tracker",
-    description:"Full stack MERN application that allows users to add, view, edit and delete exercise routines. Written as a portfolio project for CS 290 at Oregon State University.",
+    description:"Full stack MERN application (MongoDB, Express.js, React, Node.js) that enables users to add, view, edit and delete exercise routines. Written as a portfolio project for CS 290 at Oregon State University.",
     link:"https://github.com/sonnenco/exercise-app"
   }, {
     image:ChessPhoto,
     title:"Atomic Chess",
-    description:"Introduces explosive twists and fast-paced strategy. Written as a portfolio project for CS 162 at Oregon State University.",
+    description:"Chess variant which introduces explosive twists and fast-paced strategy, offering a unique experience played in a terminal window.  Written as a portfolio project for CS 162 at Oregon State University.",
     link:"https://github.com/sonnenco/atomic-chess"
   }];
 

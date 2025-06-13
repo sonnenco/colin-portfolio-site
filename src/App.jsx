@@ -35,7 +35,7 @@ function App() {
   return (
     <div className={`${
       theme ? "dark" : "light"
-      } dark:bg-slate-800 dark:text-white transition duration-400`}>
+      } light:bg-slate-50 dark:bg-slate-800 dark:text-white transition duration-400`}>
       <main className="overflow-x-hidden flex flex-col mx-auto min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16
                  max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-6xl xl:max-w-screen-lg md:pt-10 pt-2">
         
