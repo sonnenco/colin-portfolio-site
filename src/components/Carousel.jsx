@@ -48,60 +48,72 @@ export default function Carousel({ children }) {
 
   return (
     <div className="relative">
-      <div
-        ref={scrollRef}
-        className="overflow-x-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth"
-        style={{ scrollSnapType: "x mandatory" }}
-      >
-        <div className="flex space-x-4">
-          {/* Left ghost card */}
-          <div
-            style={{ width: `${cardWidth}px` }}
-            className="flex-shrink-0"
-            aria-hidden="true"
-          />
-          
-          {React.Children.map(children, (child, index) => (
-            <div key={index} className="carousel-card snap-center flex-shrink-0">
-              {child}
-            </div>
-          ))}
-
-          {/* Right ghost card */}
-          <div
-            style={{ width: `${cardWidth}px` }}
-            className="flex-shrink-0"
-            aria-hidden="true"
-          />
-        </div>
-      </div>
-
-      <div className="flex justify-center space-x-8 scale-150">
-        <button
-          onClick={scrollLeft}
-          disabled={currentIndex <= 0}
-          className="ease-in-out duration-300 hover:text-gray-600"
-          aria-label="Scroll left"
+      {/* less than lg screen sizes */}
+      <div className="block lg:hidden">
+        <div
+          ref={scrollRef}
+          className="overflow-x-hidden scrollbar-hide snap-x snap-mandatory scroll-smooth"
+          style={{ scrollSnapType: "x mandatory" }}
         >
-          &#8592;
-        </button>
-        <div className="scale-70">
-          {currentIndex + 1} / {maxIndex + 1}
-        </div>
-        <button
-          onClick={scrollRight}
-          disabled={currentIndex >= maxIndex}
-          className="ease-in-out duration-300 hover:text-gray-600"
-          aria-label="Scroll right"
-        >
-          &#8594;
-        </button>
-      </div>
-      {/* Left fade */}
-      <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-white to-transparent" />
+          <div className="flex space-x-4">
+            {/* Left ghost card */}
+            <div
+              style={{ width: `${cardWidth}px` }}
+              className="flex-shrink-0"
+              aria-hidden="true"
+            />
+            
+            {React.Children.map(children, (child, index) => (
+              <div key={index} className="carousel-card snap-center flex-shrink-0">
+                {child}
+              </div>
+            ))}
 
-      {/* Right fade */}
-      <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-white to-transparent" />
+            {/* Right ghost card */}
+            <div
+              style={{ width: `${cardWidth}px` }}
+              className="flex-shrink-0"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+
+        <div className="flex justify-center space-x-8 scale-150">
+          <button
+            onClick={scrollLeft}
+            disabled={currentIndex <= 0}
+            className="ease-in-out duration-300 light:hover:text-blue-500 dark:hover:text-emerald-300"
+            aria-label="Scroll left"
+          >
+            &#8592;
+          </button>
+          <div className="scale-70">
+            {currentIndex + 1} / {maxIndex + 1}
+          </div>
+          <button
+            onClick={scrollRight}
+            disabled={currentIndex >= maxIndex}
+            className="ease-in-out duration-300 light:hover:text-blue-500 dark:hover:text-emerald-300"
+            aria-label="Scroll right"
+          >
+            &#8594;
+          </button>
+        </div>
+        {/* Left fade */}
+        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r light:from-white dark:from-slate-800 to-transparent" />
+
+        {/* Right fade */}
+        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l light:from-white dark:from-slate-800 to-transparent" />
+      </div>
+      
+      {/* lg screen sizes and above */}
+      <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-6">
+        {React.Children.map(children, (child, index) => (
+          <div key={index} className="w-full">
+            {child}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

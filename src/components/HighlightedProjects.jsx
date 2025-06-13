@@ -3,6 +3,7 @@ import Card from './Card'
 import Carousel from './Carousel'
 import ChessPhoto from '../assets/chess.jpg'
 import Exercise from '../assets/exercise.jpg'
+import Travel from '../assets/travel.jpg'
 
 const HighlightedProjects = () => {
   const scrollRef = useRef(null);
@@ -19,6 +20,11 @@ const HighlightedProjects = () => {
   }, []);
   
   const projects = [{
+    image:Travel,
+    title:"Wanderlust Travel Agency",
+    description:"Wanderlust Travel Agency ('WTA') is a portfolio project for CS340 at Oregon State University created by Rebecca Rosenberg and Colin Sonnenberg. WTA is a fictional business where agency employees need a website to help make and manage bookings.",
+    link:"https://github.com/sonnenco/wanderlust_travel_agency"
+  }, {
     image:Exercise,
     title:"Exercise Tracker",
     description:"Full stack MERN application that allows users to add, view, edit and delete exercise routines. Written as a portfolio project for CS 290 at Oregon State University.",
@@ -28,16 +34,11 @@ const HighlightedProjects = () => {
     title:"Atomic Chess",
     description:"Introduces explosive twists and fast-paced strategy. Written as a portfolio project for CS 162 at Oregon State University.",
     link:"https://github.com/sonnenco/atomic-chess"
-  }, {
-    image:ChessPhoto,
-    title:"Project 3",
-    description:"Description.",
-    link:"https://github.com/sonnenco/atomic-chess"
   }];
 
   return (
     <>
-      <div className="font-bold text-xl mt-10">Project highlights</div>
+      <div className="font-extrabold text-2xl mt-10 lg:mb-10 dark:text-white">Project highlights</div>
       <div ref={scrollRef}>
         <Carousel>
           {projects.map((project, index) => (

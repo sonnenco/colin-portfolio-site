@@ -35,23 +35,23 @@ function App() {
   return (
     <div className={`${
       theme ? "dark" : "light"
-      } dark:bg-zinc-700 dark:text-white transition duration-400`}>
+      } dark:bg-slate-800 dark:text-white transition duration-400`}>
       <main className="overflow-x-hidden flex flex-col mx-auto min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16
-                 max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-screen-lg md:pt-10">     
+                 max-w-full sm:max-w-xl md:max-w-3xl lg:max-w-6xl xl:max-w-screen-lg md:pt-10 pt-2">
         
         {/* Header */}
         <div className="flex flex-row justify-between items-center">
-          <div className="font-bold text-2xl leading-none">COLIN S.</div>
-          <div className="flex items-center justify-centers scale-110 p-1 rounded-md light:bg-zinc-100 dark:bg-zinc-600">
+          <div className="font-extrabold text-2xl leading-none dark:text-emerald-300">COLIN S.</div>
+          <div className="flex items-center justify-centers scale-110 p-1 rounded-md light:bg-slate-100 dark:bg-slate-600">
             <button
-              className="bg-transparent p-2 hover:bg-zinc-200 dark:hover:bg-zinc-100/10 rounded-md"
+              className="bg-transparent p-2 light:hover:bg-slate-200 dark:hover:bg-slate-400 rounded-md transition duration-300"
               onClick={() => {
                 setTheme("");
             }}>
               <FiSun/>
             </button>
             <button
-              className="bg-transparent rounded-md p-2 hover:bg-zinc-200"
+              className="bg-transparent p-2 light:hover:bg-slate-200 dark:hover:bg-slate-400 rounded-md transition duration-300"
               onClick={() => {
                 setTheme("dark");
             }}>
@@ -67,9 +67,9 @@ function App() {
 
         {/* About me */}
         <div className="mt-6">
-          <div className="font-bold text-xl">About me</div>
-          <div className="text-sm/5 mt-4">
-            <div className="">
+          <div className="font-extrabold text-2xl dark:text-white">About me</div>
+          <div className="text-sm/5 mt-4 lg:text-lg/6">
+            <div>
               I'm Colin Sonnenberg, an infrastructure reliability engineer at Comcast based in Philadelphia, USA.
             </div>
             <br />
@@ -79,21 +79,22 @@ function App() {
             </div>
             <br />
             <div>
-              Today I focus on strengthening the resiliency and fault tolerance of critical cybersecurity applications and services.  I'm also pursuing
-              a B.S. Computer Science from Oregon State University part-time to further my education.
+              Today I focus on strengthening the resiliency and fault tolerance of critical cybersecurity systems through comprehensive
+              business continuity and disaster recovery strategies.  I'm also pursuing a B.S. Computer Science from Oregon State University during evenings and weekends to further my education.
             </div>
             <br />
             <div>
-              Outside of work and university, you can find me adding new stamps to my passport, adding projects to my portfolio or cooking new recipes in the kitchen.
+              Outside of work and university, you can find me adding new stamps to my passport and cheering on Philly sports teams.
             </div>
+            <br />
           </div>
         </div>
 
         {/* Footer */}
         <div className="border-t border-gray-300 mt-6">
           <div className="flex flex-row justify-between mt-3 text-sm font-semibold">
-            <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank"  className="ml-20 ease-in-out duration-300 hover:text-blue-500">LinkedIn</a>
-            <a href="https://github.com/sonnenco" target="_blank"  className="mr-20 ease-in-out duration-300 hover:text-blue-500">GitHub</a>
+            <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank"  className="ml-20 ease-in-out duration-300 light:hover:text-blue-500 dark:hover:text-emerald-300">LinkedIn</a>
+            <a href="https://github.com/sonnenco" target="_blank"  className="mr-20 ease-in-out duration-300 light:hover:text-blue-500 dark:hover:text-emerald-300">GitHub</a>
           </div>
           <div className="flex flex-col mt-4 items-center">
             <div className="text-sm font-semibold">🌎 Philadelphia, PA, USA</div>
