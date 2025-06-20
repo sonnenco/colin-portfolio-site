@@ -7,28 +7,38 @@ export default function Carousel({ children }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (scrollRef.current) {
-      const firstChild = scrollRef.current.querySelector(".carousel-card");
-      if (firstChild) {
-        const style = window.getComputedStyle(firstChild);
-        const width = firstChild.offsetWidth;
-        const marginRight = parseInt(style.marginRight);
-        const totalCardWidth = width + marginRight;
-        setCardWidth(totalCardWidth);
+    const updateCards = () => {
+      if (scrollRef.current) {
+        const firstChild = scrollRef.current.querySelector(".carousel-card");
+        if (firstChild) {
+          const style = window.getComputedStyle(firstChild);
+          const width = firstChild.offsetWidth;
+          const marginRight = parseInt(style.marginRight);
+          const totalCardWidth = width + marginRight;
+          setCardWidth(totalCardWidth);
 
-        const totalCards = React.Children.count(children);
-        setMaxIndex(totalCards - 1);
+          const totalCards = React.Children.count(children);
+          setMaxIndex(totalCards - 1);
 
-        setCurrentIndex(0);
-        scrollRef.current.scrollLeft = 0;
+          scrollRef.current.scrollTo({
+            left: (currentIndex + 1) * totalCardWidth,
+            behavior: "auto"
+          });
+        }
       }
     }
-  }, [children]);
+    updateCards();
+    window.addEventListener("resize", updateCards);
+
+    return () => {
+      window.removeEventListener("resize", updateCards);
+    };
+  }, [children, currentIndex]);
 
   const scrollToIndex = (index) => {
     if (!scrollRef.current) return;
     const clampedIndex = Math.min(Math.max(index, 0), maxIndex);
-    const scrollIndex = clampedIndex + 1; // +1 to account for left ghost card
+    const scrollIndex = clampedIndex + 1;
 
     scrollRef.current.scrollTo({
       left: scrollIndex * cardWidth,
