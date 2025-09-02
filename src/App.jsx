@@ -68,23 +68,27 @@ function App() {
         {/* About me */}
         <div className="mt-6">
           <div className="font-extrabold text-2xl dark:text-white">About me</div>
-          <div className="text-sm/5 mt-4 lg:text-lg/6">
+          <div className="mt-4 font-extralight lg:text-lg/6">
             <div>
-              I'm Colin Sonnenberg, an infrastructure reliability engineer at Comcast based in Philadelphia, USA.
+              I'm Colin Sonnenberg, an infrastructure resiliency engineer based in Philadelphia.
             </div>
             <br />
             <div>
-              A lifelong passion for technology and problem-solving initially led me to earn a B.S. Information Technology from the Pennsylvania State University.
-              I spent several years working for EY, later joining Comcast as an information security analyst.
+              My lifelong passion for technology led me to earn a B.S. in Information Technology from Penn State.  I began my career at EY, supporting data protection
+              and privacy initiatives for leading public and private companies.
             </div>
             <br />
             <div>
-              Today I focus on strengthening the resiliency and fault tolerance of critical cybersecurity systems through comprehensive
-              business continuity and disaster recovery strategies.  I'm also pursuing a B.S. Computer Science from Oregon State University during evenings and weekends to further my education.
+              I later joined Comcast as an information security analyst, where I helped develop and implement a successful continuous monitoring and remediation program.
+              Today, I lead data center and tool resiliency efforts within Comcast Cybersecurity.
             </div>
             <br />
             <div>
-              Outside of work and university, you can find me adding new stamps to my passport and cheering on Philly sports teams.
+              Outside of work, I'm pursuing a second B.S. in Computer Science from Oregon State University with the goal of transitioning into a software engineering role.
+            </div>
+            <br />
+            <div>
+              In my free time, you can find me exploring new countries or fine-tuning my fantasy football lineups.
             </div>
             <br />
           </div>
