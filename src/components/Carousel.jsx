@@ -117,7 +117,7 @@ export default function Carousel({ children }) {
       </div>
       
       {/* lg screen sizes and above */}
-      <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 gap-2">
         {React.Children.map(children, (child, index) => (
           <div key={index} className="w-full">
             {child}

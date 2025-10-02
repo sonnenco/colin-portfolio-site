@@ -4,11 +4,11 @@ const Card = ({ image, title, description, link }) => {
       <img
         src={image}
         alt={title}
-        className="h-48 w-full object-cover"
+        className="h-45 w-full object-cover"
       />
       <div className="flex flex-col flex-grow p-4">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2 line-clamp-1">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-4 flex-grow">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+        <p className="text-gray-600 text-sm flex-grow">
           {description}
         </p>
         <a
