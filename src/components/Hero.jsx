@@ -47,12 +47,12 @@ const Hero = ({ theme, setTheme }) => {
       {/* Resume, down arrow and links */}
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <a
-          href="https://drive.google.com/file/d/1Ro1fMSgqevLPDxEkpWMovqC4jYl-F0LX/view?usp=share_link"
+          href="https://drive.google.com/file/d/1TD6yA3zc5OJthp9gT_9MkEby_Z65ICGo/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="border-2 rounded-lg font-semibold px-10 py-2 mb-4 md:mb-0
           ease-in-out duration-300 max-w-35
-          light:text-white light:border-blue-500 light:bg-blue-500 light:hover:bg-white light:hover:text-blue-500
+          light:text-white light:border-blue-500 light:bg-blue-500 light:hover:bg-slate-100 light:hover:text-blue-500
           dark:text-slate-800 dark:border-emerald-300 dark:bg-emerald-300 dark:hover:bg-slate-800 dark:hover:text-emerald-300">
           Resume
         </a>
@@ -62,12 +62,12 @@ const Hero = ({ theme, setTheme }) => {
           <div className="flex flex-row">
             <a href="https://www.linkedin.com/in/colin-sonnenberg/" target="_blank" rel="noopener noreferrer">
               <CiLinkedin className="mr-6 scale-200 transition duration-300
-                light:hover:bg-white light:hover:text-blue-500
+                light:hover:bg-slate-100 light:hover:text-blue-500
                 dark:hover:bg-slate-800 dark:hover:text-emerald-300" />
             </a>
             <a href="https://github.com/sonnenco" target="_blank" rel="noopener noreferrer">
               <IoLogoGithub className="scale-200 transition duration-300
-                light:hover:bg-white light:hover:text-blue-500
+                light:hover:bg-slate-100 light:hover:text-blue-500
                 dark:hover:bg-slate-800 dark:hover:text-emerald-300" />
             </a>
           </div>
