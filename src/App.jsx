@@ -47,33 +47,27 @@ function App() {
           <div className="font-extrabold text-2xl dark:text-white">About me</div>
           <div className="mt-4 font-extralight lg:text-lg/8">
             <div>
-              My name is Colin Sonnenberg, and I'm currently a cybersecurity engineer based in Philadelphia.
+              I’m Colin Sonnenberg, a cybersecurity engineer based in Philadelphia.
             </div>
             <br />
             <div>
-              My lifelong interest in technology began early — some of my first memories involve playing games on our family’s beige Gateway desktop, complete with a buzzing CRT monitor. 
-              As I grew up, the rise of social media and the first wave of smartphones only deepened my fascination with tech and solidified my desire to pursue a technology-focused career.
+              My interest in technology began at an early age by playing games on the family desktop tower and buzzing CRT monitor.  As I grew up, the rise of social media and smartphones fundamentally changed the way people interacted with each other.  This only reinforced my fascination with technology and solidified my decision to pursue a career focused in it.
             </div>
             <br/>
             <div>
-              That path eventually led me to the Pennsylvania State University, where I earned a B.S. in Information Technology and a minor in Security and Risk Analysis. 
-              My education opened the door to my first role at EY, where I worked on a range of data protection and privacy projects. 
-              This aligned with the emergence of GDPR-style legislation in the U.S. and the development of regulatory bodies tasked with enforcing compliance.
+              I conducted my undergraduate studies at the Pennsylvania State University, eventually earning a B.S. Information Technology with a minor in Security and Risk Analysis.  I then began my career at EY working on a range of data protection and privacy projects across retail and financial sectors.
             </div>
             <br />
             <div>
-              I later joined Comcast as an information security analyst within the Governance, Risk, and Compliance (GRC) team. 
-              Today, I focus on implementing disaster recovery and continuity capabilities across critical security platforms and tools.
+              I later joined Comcast as an information security analyst within the Governance, Risk and Compliance (GRC) organization.  Today, I work on strengthening disaster recovery and continuity capabilities for our critical security platforms and tools.
             </div>
             <br />
             <div>
-              Over time, my work in cybersecurity has led me to collaborate closely with engineering teams, where I found myself increasingly drawn to the technical problem-solving and creativity involved in building software.
-              That curiosity has grown into a clear goal: to transition into a full-time software engineering role.
-              To support that pivot, I'm currently pursuing a second B.S. in Computer Science from Oregon State University.
+              Over time I’ve become increasingly drawn to the field of software engineering.  I enjoy the problem solving and creativity involved with building complex software solutions.  My curiosity has grown into a clear goal: to transition into a full-time software engineering role.  I’m supporting that pivot by pursuing a B.S. Computer Science at Oregon State University.
             </div>
             <br />
             <div>
-              In my free time, you’ll either find me traveling the world with my partner or relaxing at home with our three cats.
+              In my free time, you can find me camping or adding new passport stamps with my partner.
             </div>
             <br />
           </div>

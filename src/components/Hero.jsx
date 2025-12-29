@@ -47,7 +47,7 @@ const Hero = ({ theme, setTheme }) => {
       {/* Resume, down arrow and links */}
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <a
-          href="https://drive.google.com/file/d/1TD6yA3zc5OJthp9gT_9MkEby_Z65ICGo/view?usp=sharing"
+          href="https://drive.google.com/file/d/1LXl14qK9sTc6UnNvD2etOJz1U6qV_2xt/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
           className="border-2 rounded-lg font-semibold px-10 py-2 mb-4 md:mb-0
